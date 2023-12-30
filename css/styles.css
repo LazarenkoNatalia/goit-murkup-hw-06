@@ -35,15 +35,42 @@ img {
 
 
 
-.container {
+/* .container {
     width: 1158px;
     padding-left: 15px;
  padding-right: 15px;
-        margin: 0 auto;}
+        margin: 0 auto;} */
+
+.container {
+    max-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
 
                 .section {
-                    padding: 120px 0;
+                    padding: 96px 0;
                 }
+
+   @media screen and (min-width: 1158px) {
+    .section {
+            padding: 120px 0;
+        }
+   }
 
    .header{
 border-bottom: 1px solid  #E7E9FC;
@@ -141,12 +168,12 @@ color: #404BBF;
     color:  #FFFF;
      background-color: #2E2F42; 
         text-align: center;
-        font-size: 56px;
+        font-size: 36px;
         font-weight: 700;
-        line-height: 1.07;
-        max-width: 1440px;
+        line-height: 1.11;
+        max-width: 320px;
         margin: 0 auto;
-        padding: 188px 0;
+        padding: 72px 0;
         background-image: repeating-linear-gradient(rgba(46, 47, 66, 0.70),
                 rgba(46, 47, 66, 0.70)), url(../images/people-office.jpg);
     /* background-image: repeating-linear-gradient( */
@@ -161,18 +188,48 @@ color: #404BBF;
         
 }
 
+@media screen and (min-width: 768px) {
+    .hero {
+    padding: 112px 0;
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .hero {
+        padding: 188px 0;
+    max-width: 1440px;
+    }
+}
+
 .hero-title {
     color: #FFFF;
         /* background-color: #2E2F42; */
         text-align: center;
-        font-size: 56px;
+        font-size: 36px;
         font-weight: 700;
-        line-height: 1.07;
+        line-height: 1.11;
         letter-spacing: 0.02em;
        text-align: center; 
       max-width: 496px;
       margin: 0 auto;
-      margin-bottom: 48px;
+      margin-bottom: 72px;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-title {
+        font-size: 56px;
+    line-height: 1.07;
+        margin-bottom: 36px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .hero-title {
+        margin-bottom: 48px;
+    }
 }
 
 .hero-button , .form-btn{
@@ -217,35 +274,88 @@ color: #404BBF;
 
 .adv-list {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    gap: 72px 24px;
 }
+
+@media screen and (min-width: 768px) {
+.adv-list {
+    flex-direction: row;
+}
+}
+
+@media screen and (min-width: 1158px) {
+.adv-list {   gap: 24px;
+}
+}
+
 
 .adv-list-item{
-width: calc((100% - 72px) / 4);
+/* width: calc((100% - 72px) / 4); */
 }
 
+@media screen and (min-width: 768px) {
+.adv-list-item {
+        width: calc((100% - 24px) / 2);
+        flex-wrap: wrap;
+}
+}
+@media screen and (min-width: 1158px) {
+    .adv-list-item {
+        width: calc((100% - 72px) / 4);
+    }
+}
 .adv-list-icon{
+    
+    display: none;
+}
+
+@media screen and (min-width: 1158px){
+    .adv-list-icon {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 112px;
-    background-color: #f4f4fd;
-    border-radius: 4px;
-    margin-bottom: 8px;
+        justify-content: center;
+        align-items: center;
+        height: 112px;
+        background-color: #f4f4fd;
+        border-radius: 4px;
+        margin-bottom: 8px;
+    }
 }
 
 .adv-title {
 color: #2E2F42;
 font-family: "Roboto",sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
 }
 
+@media screen and (min-width: 1158px) {
+.adv-title {
+    font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+}
+}
+
 .adv-item {
 color: #434455;
+font-weight: 500;
+text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .adv-item {
+       text-align: left;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+.adv-item {
+font-weight: 400;
+}
 }
 
 .team {
