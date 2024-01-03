@@ -680,6 +680,13 @@ justify-content: center;
 }
 }
 
+@media screen and (min-width: 1158px) {
+    .foot-container {
+        flex-direction: row;
+         flex-wrap: nowrap; 
+    }
+}
+
 .foot-first{
      /* margin-right: 120px; */
      text-align: center;
@@ -757,6 +764,7 @@ max-width: 208px;
 
 @media screen and (min-width: 1158px) {
     .foot-second {
+/* margin-right: 80px; */
 
         /* max-width: 453px; */
 
@@ -787,7 +795,7 @@ max-width: 208px;
 @media screen and (min-width: 1158px) {
     .foot-icon-list {
 justify-content: flex-start;
-align-items: left;
+text-align: left;
     }
 }
 
@@ -816,21 +824,24 @@ align-items: left;
 /* foot-form */
 
 .foot-wrapper {
-    /* margin-left: auto; */
-width: 100%;
+   
+ width: 100%; 
+
 }
 
 @media screen and (min-width: 768px) {
 .foot-wrapper {
         max-width: 453px;
-            width: 100%;
+            /* width: 100%; */
+            margin-right: 43px;
 }
 
 }
 
 @media screen and (min-width: 1158px) {
 .foot-wrapper {
-        margin-left: auto;
+    margin-left: auto;
+        margin-right: 0;
     }
 }
 
@@ -850,7 +861,7 @@ text-align: center;
 .foot-form{
 display: flex;
     align-items: center;
-    gap: 16px 24px;
+    gap: 16px;
      flex-direction: column; 
     justify-content: center;
 }
@@ -858,12 +869,13 @@ display: flex;
 @media screen and (min-width: 768px){
 .foot-form{
  flex-direction: row; 
-/* gap: 24px; */
+  gap: 24px;  
+ justify-content: left;
 }
 
 }
 .subs-email{
-width: 100%;
+width: 264px;
 }
 
 @media screen and (min-width: 768px) {
@@ -903,7 +915,7 @@ width: 264px;
         padding: 8px 24px;
         justify-content: center;
         align-items: center;
-        margin-left: 16px;
+        /* margin-left: 16px; */
         font-weight: 500;
         line-height: 1.5em;
         letter-spacing: 0.04em;
@@ -1218,7 +1230,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
     background-color: #fff;
     transform: translateX(-100%);
     visibility: hidden;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1)e;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu.is-open {
